@@ -2,294 +2,361 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.4.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="styles.css" />
-    <title>Web Design Mastery | Fitclub</title>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utilities.css" />
   </head>
   <body>
-    <nav>
-      <div class="nav__logo">
-        <a href="#"><img src="assets/logo.png" alt="logo" /></a>
+    <nav id="desktop-nav">
+      <div class="logo"> Sri balaji J</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
       </div>
-      <ul class="nav__links">
-        <li class="link"><a href="#">Home</a></li>
-        <li class="link"><a href="#">Program</a></li>
-        <li class="link"><a href="#">Service</a></li>
-        <li class="link"><a href="#">About</a></li>
-        <li class="link"><a href="#">Community</a></li>
-      </ul>
-      <button class="btn">Join Now</button>
     </nav>
-
-    <header class="section__container header__container">
-      <div class="header__content">
-        <span class="bg__blur"></span>
-        <span class="bg__blur header__blur"></span>
-        <h4>BEST FITNESS IN THE TOWN</h4>
-        <h1><span>MAKE</span> YOUR BODY SHAPE</h1>
-        <p>
-          Unleash your potential and embark on a journey towards a stronger,
-          fitter, and more confident you. Sign up for 'Make Your Body Shape' now
-          and witness the incredible transformation your body is capable of!
-        </p>
-        <button class="btn">Get Started</button>
-      </div>
-      <div class="header__image">
-        <img src="assets/header.png" alt="header" />
-      </div>
-    </header>
-
-    <section class="section__container explore__container">
-      <div class="explore__header">
-        <h2 class="section__header">EXPLORE OUR PROGRAM</h2>
-        <div class="explore__nav">
-          <span><i class="ri-arrow-left-line"></i></span>
-          <span><i class="ri-arrow-right-line"></i></span>
+    <nav id="hamburger-nav">
+      <div class="logo">John Doe</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
-      <div class="explore__grid">
-        <div class="explore__card">
-          <span><i class="ri-boxing-fill"></i></span>
-          <h4>Strength</h4>
-          <p>
-            Embrace the essence of strength as we delve into its various
-            dimensions physical, mental, and emotional.
-          </p>
-          <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/portfolio.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Sri balaji J</h1>
+        <p class="section__text__p2">Frontend Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
         </div>
-        <div class="explore__card">
-          <span><i class="ri-heart-pulse-fill"></i></span>
-          <h4>Physical Fitness</h4>
-          <p>
-            It encompasses a range of activities that improve health, strength,
-            flexibility, and overall well-being.
-          </p>
-          <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
-        </div>
-        <div class="explore__card">
-          <span><i class="ri-run-line"></i></span>
-          <h4>Fat Lose</h4>
-          <p>
-            Through a combination of workout routines and expert guidance, we'll
-            empower you to reach your goals.
-          </p>
-          <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
-        </div>
-        <div class="explore__card">
-          <span><i class="ri-shopping-basket-fill"></i></span>
-          <h4>Weight Gain</h4>
-          <p>
-            Designed for individuals, our program offers an effective approach
-            to gaining weight in a sustainable manner.
-          </p>
-          <a href="#">Join Now <i class="ri-arrow-right-line"></i></a>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
         </div>
       </div>
     </section>
-
-    <section class="section__container class__container">
-      <div class="class__image">
-        <span class="bg__blur"></span>
-        <img src="assets/class-1.jpg" alt="class" class="class__img-1" />
-        <img src="assets/class-2.jpg" alt="class" class="class__img-2" />
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/25469811_developer_male.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experienced Undergrad</h3>
+              <p> <br />Frontend Development</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B .E Computer Science</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic quis
+              reprehenderit et laborum, rem, dolore eum quod voluptate
+              exercitationem nobis, nihil esse debitis maxime facere minus sint
+              delectus velit in eos quo officiis explicabo deleniti dignissimos.
+              Eligendi illum libero dolorum cum laboriosam corrupti quidem,
+              reiciendis ea magnam? Nulla, impedit fuga!
+            </p>
+          </div>
+        </div>
       </div>
-      <div class="class__content">
-        <h2 class="section__header">THE CLASS YOU WILL GET HERE</h2>
-        <p>
-          Led by our team of expert and motivational instructors, "The Class You
-          Will Get Here" is a high-energy, results-driven session that combines
-          a perfect blend of cardio, strength training, and functional
-          exercises. Each class is carefully curated to keep you engaged and
-          challenged, ensuring you never hit a plateau in your fitness
-          endeavors.
-        </p>
-        <button class="btn">Book A Class</button>
-      </div>
+    
     </section>
-
-    <section class="section__container join__container">
-      <h2 class="section__header">WHY JOIN US ?</h2>
-      <p class="section__subheader">
-        Our diverse membership base creates a friendly and supportive
-        atmosphere, where you can make friends and stay motivated.
-      </p>
-      <div class="join__image">
-        <img src="assets/join.jpg" alt="Join" />
-        <div class="join__grid">
-          <div class="join__card">
-            <span><i class="ri-user-star-fill"></i></span>
-            <div class="join__card__content">
-              <h4>Personal Trainer</h4>
-              <p>Unlock your potential with our expert Personal Trainers.</p>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tailwind CSS</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+             
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
             </div>
           </div>
-          <div class="join__card">
-            <span><i class="ri-vidicon-fill"></i></span>
-            <div class="join__card__content">
-              <h4>Practice Sessions</h4>
-              <p>Elevate your fitness with practice sessions.</p>
-            </div>
-          </div>
-          <div class="join__card">
-            <span><i class="ri-building-line"></i></span>
-            <div class="join__card__content">
-              <h4>Good Management</h4>
-              <p>Supportive management, for your fitness success.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="section__container price__container">
-      <h2 class="section__header">OUR PRICING PLAN</h2>
-      <p class="section__subheader">
-        Our pricing plan comes with various membership tiers, each tailored to
-        cater to different preferences and fitness aspirations.
-      </p>
-      <div class="price__grid">
-        <div class="price__card">
-          <div class="price__card__content">
-            <h4>Basic Plan</h4>
-            <h3>$16</h3>
-            <p>
-              <i class="ri-checkbox-circle-line"></i>
-              Smart workout plan
-            </p>
-            <p>
-              <i class="ri-checkbox-circle-line"></i>
-              At home workouts
-            </p>
-          </div>
-          <button class="btn price__btn">Join Now</button>
-        </div>
-        <div class="price__card">
-          <div class="price__card__content">
-            <h4>Weekly Plan</h4>
-            <h3>$25</h3>
-            <p>
-              <i class="ri-checkbox-circle-line"></i>
-              PRO Gyms
-            </p>
-            <p>
-              <i class="ri-checkbox-circle-line"></i>
-              Smart workout plan
-            </p>
-            <p>
-              <i class="ri-checkbox-circle-line"></i>
-              At home workouts
-            </p>
-          </div>
-          <button class="btn price__btn">Join Now</button>
-        </div>
-        <div class="price__card">
-          <div class="price__card__content">
-            <h4>Monthly Plan</h4>
-            <h3>$45</h3>
-            <p>
-              <i class="ri-checkbox-circle-line"></i>
-              ELITE Gyms & Classes
-            </p>
-            <p>
-              <i class="ri-checkbox-circle-line"></i>
-              PRO Gyms
-            </p>
-            <p>
-              <i class="ri-checkbox-circle-line"></i>
-              Smart workout plan
-            </p>
-            <p>
-              <i class="ri-checkbox-circle-line"></i>
-              At home workouts
-            </p>
-            <p>
-              <i class="ri-checkbox-circle-line"></i>
-              Personal Training
-            </p>
-          </div>
-          <button class="btn price__btn">Join Now</button>
-        </div>
-      </div>
-    </section>
-
-    <section class="review">
-      <div class="section__container review__container">
-        <span><i class="ri-double-quotes-r"></i></span>
-        <div class="review__content">
-          <h4>MEMBER REVIEW</h4>
-          <p>
-            What truly sets this gym apart is their expert team of trainers. The
-            trainers are knowledgeable, approachable, and genuinely invested in
-            helping members achieve their fitness goals. They take the time to
-            understand individual needs and create personalized workout plans,
-            ensuring maximum results and safety.
-          </p>
-          <div class="review__rating">
-            <span><i class="ri-star-fill"></i></span>
-            <span><i class="ri-star-fill"></i></span>
-            <span><i class="ri-star-fill"></i></span>
-            <span><i class="ri-star-fill"></i></span>
-            <span><i class="ri-star-half-fill"></i></span>
-          </div>
-          <div class="review__footer">
-            <div class="review__member">
-              <img src="assets/member.jpg" alt="member" />
-              <div class="review__member__details">
-                <h4>Jane Cooper</h4>
-                <p>Software Developer</p>
-              </div>
-            </div>
-            <div class="review__nav">
-              <span><i class="ri-arrow-left-line"></i></span>
-              <span><i class="ri-arrow-right-line"></i></span>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>React</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>C</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Data Structures</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
             </div>
           </div>
         </div>
       </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
     </section>
-
-    <footer class="section__container footer__container">
-      <span class="bg__blur"></span>
-      <span class="bg__blur footer__blur"></span>
-      <div class="footer__col">
-        <div class="footer__logo"><img src="assets/logo.png" alt="logo" /></div>
-        <p>
-          Take the first step towards a healthier, stronger you with our
-          unbeatable pricing plans. Let's sweat, achieve, and conquer together!
-        </p>
-        <div class="footer__socials">
-          <a href="#"><i class="ri-facebook-fill"></i></a>
-          <a href="#"><i class="ri-instagram-line"></i></a>
-          <a href="#"><i class="ri-twitter-fill"></i></a>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/calc.webp"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Calculator</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/Landingpage.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Landing Page</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/TaskMate.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">To Do List</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
         </div>
       </div>
-      <div class="footer__col">
-        <h4>Company</h4>
-        <a href="#">Business</a>
-        <a href="#">Franchise</a>
-        <a href="#">Partnership</a>
-        <a href="#">Network</a>
+      
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:balajijayakumar777@gmail.com">balajijayakumar777@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com">LinkedIn</a></p>
+        </div>
       </div>
-      <div class="footer__col">
-        <h4>About Us</h4>
-        <a href="#">Blogs</a>
-        <a href="#">Security</a>
-        <a href="#">Careers</a>
-      </div>
-      <div class="footer__col">
-        <h4>Contact</h4>
-        <a href="#">Contact Us</a>
-        <a href="#">Privacy Policy</a>
-        <a href="#">Terms & Conditions</a>
-        <a href="#">BMI Calculator</a>
-      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 Sri balaji J. All Rights Reserved.</p>
     </footer>
-    <div class="footer__bar">
-      Copyright © 2023 Web Design Mastery. All rights reserved.
-    </div>
+   
   </body>
 </html>
